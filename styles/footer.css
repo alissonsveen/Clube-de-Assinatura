@@ -1,0 +1,200 @@
+.book-trace {
+position: absolute;
+z-index: -1;
+ & img {
+    width: 100%;
+    height: auto;
+ }   
+}
+
+.brand {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 0px;
+   gap: 0.75rem;
+   position: relative;
+   width: 16.5rem;
+   height: 8.161rem;
+   left: 20%;
+   top: 10.625rem;
+
+   & #divider {
+   width: 16.5rem;
+   height: 0px;
+   border: 1px solid var(--shape-stroke);
+   }
+
+   & #social {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      justify-content: space-between;
+      gap: 4.8px;
+      width: 16.5rem;
+      color: var(--blue-light);
+
+      div:hover {
+         background-color: var(--shape-stroke);
+         border-radius: 9999px;
+         width: 2.5rem;
+         height: 2.5rem;
+
+      }
+    
+      & .instagram:hover {
+         & svg path {
+            fill: white;
+       }
+    }
+
+      & .twitter:hover {
+         & svg path {
+            fill: white;
+      }
+   }
+      & .facebook:hover {
+         & svg path {
+            fill: white;
+      }
+   }
+
+      & .discord:hover {
+         & svg path {
+         fill: white;
+      }
+   }
+
+      & .whatsapp:hover {
+         & svg path {
+            fill: white;
+      }
+      }
+      & .mail:hover {
+         & svg path {
+            fill: white;
+       }
+    }
+
+      & .whatsapp:hover {
+         & svg path {
+           fill: #ffffff;
+          }
+       }
+   } 
+}
+
+   & .links {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+   padding: 8px 0px 0px;
+   gap: 3.5rem;
+   position: relative;
+   width: 19.5rem;
+   height: 8.938rem;
+   left: 60%;
+   top: 3.75rem;
+
+   & p {
+      font: var(--title-xs);
+      color: var(--text-body);
+      margin-bottom: 1.25rem;
+   }
+
+   & a {
+      font: var(--link);
+      text-decoration: none;
+      color: var(--blue-light);
+      display: flex;
+      width: 8rem;
+      height: 2.5rem;
+
+      &:hover {
+         color: var(--text-body);
+      }
+   }
+}
+
+@media (width <= 80em) {
+   .book-trace {
+      position: absolute;
+      z-index: -1;
+      & img {
+         width: 100%;
+         height: 29.688rem;
+       }   
+      
+   }
+
+   .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 0.75rem;
+      position: relative;
+      width: 16.5rem;
+      height: 8.161rem;
+      left: 15%;
+      top: 5.625rem;
+
+      & #divider {
+      width: 19.438rem;
+      position: relative;
+      right: 1.25rem;
+      height: 0px;
+      border: 1px solid var(--shape-stroke);
+      }
+   
+      & #social {
+         display: flex;
+         flex-direction: row;
+         position: relative;
+         justify-content: space-between;
+         gap: 4.8px;
+         width: 16.5rem;
+         color: var(--blue-light);
+   
+         div:hover {
+            background-color: var(--shape-stroke);
+            border-radius: 9999px;
+            width: 2.5rem;
+            height: 2.5rem;
+   
+         }
+      }
+   }
+
+   & .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 8px 0px 0px;
+      gap: 3.5rem;
+      position: relative;
+      width: 19.5rem;
+      height: 8.938rem;
+      left: 3.125rem;
+      top: 9.375rem;
+   
+      & p {
+         font: var(--title-xs);
+         color: var(--text-body);
+         margin-bottom: 1.25rem;
+      }
+   
+      & a {
+         font: var(--link);
+         text-decoration: none;
+         color: var(--blue-light);
+         display: flex;
+         width: 8rem;
+         height: 2.5rem;
+      }
+   }
+
+}
+
