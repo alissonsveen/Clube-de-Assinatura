@@ -1,0 +1,529 @@
+section.pricing {
+  position: relative;
+  height: 62.5rem;
+
+  & img[src*="pricing"] {
+    position: absolute; 
+    z-index: -1; 
+    width: 100%; 
+    height: auto; 
+  }
+}
+
+& #assinatura {
+  font: var(--title-sm);
+  color: var(--text-title);
+  padding-bottom: 12.5rem;
+  width: 18.375rem;
+  height: 4.75rem;
+}
+
+  & .cards {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 1rem; 
+  background-color: var(--shape-base);
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  
+
+  & h1 {
+      font: var(--title-md);
+      color: var(--text-title);
+      padding-top: 2rem;
+      
+      & small {
+          font: var(--title-xs);
+          }
+   }
+   
+   & p {
+    display: flex;
+    justify-content: start;
+    font: var(--body-sm);
+    color: var(--text-label);
+    padding-top: 0.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 4.375rem;
+    
+    }
+
+  &:hover .card-2 {
+      transform: translateX(-18.75rem) translateY(2.5rem) rotate(-6deg) scale(1.05);
+      transition: transform 0.3s ease;
+  }
+
+  &:hover .card-3 {
+      transform: translateX(18.75rem) translateY(2.5rem) rotate(6deg) scale(1.05);
+      transition: transform 0.3s ease;
+  }
+
+  & .card-1 {
+      position: relative;
+      z-index: 1; 
+      width: 18rem;
+      height: 26rem;
+      background: var(--shape-base);
+      border-radius: 1.5rem;
+      transition: transform 0.3s ease, z-index 0.3s ease;
+
+      & img {
+          position: relative;
+          top: -3.125rem;
+          right: 2.5rem;
+          z-index: -4;
+      }
+
+     & #semestral {
+          position: relative;
+          right: 5.625rem;
+          font: var(--title-xs);
+          color: var(--pink-light);
+        }
+
+       & #btn-popular {
+          padding: 9px 20px;
+          gap: 0.5rem;
+          font: var(--tag) ;
+          text-align: center;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          position: absolute;
+          width: 5.625rem;
+          height: 1.875rem;
+          left: 65%;
+          top: 1.619rem;
+          color: var(--text-body);
+          background:  var(--shape-stroke);
+          border-radius: 62.438rem;
+        }
+
+        & ul {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          padding: 0px;
+          gap: 12px;
+          width: 100%;
+          font: var(--body-xs);
+          color: var(--text-body);
+        
+         & li {
+            list-style: none; 
+            position: relative; 
+            padding-left: 3.75rem; 
+        
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0; 
+              top: 50%; 
+              transform: translateY(-50%) translateX(60%);
+              width: 2.5rem; 
+              height: 2.5rem; 
+              background-image: url(/assets/icons/star-li-pink.png); 
+              background-size: contain; 
+              background-repeat: no-repeat; 
+            }
+          }
+        }
+
+        .btn-card-1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 20px;
+          gap: 8px;
+          isolation: isolate;
+          width: 14rem;
+          height: 2.5rem;
+          color: var(--text-title);
+          background: var(--pink-dark);
+          border-radius: 8px;
+          margin-top: 1.5rem;
+          margin-inline: auto;
+        }
+
+        &:hover {
+          box-shadow: 0px 6px 30px 5px rgba(115, 182, 210, 0.1);
+          transform: scale(1.05);
+          z-index: 1;
+          background-color: var(--shape-hover);
+        }
+  }
+
+  & .card-2 {
+      position: absolute;
+      width: 18rem;
+      height: 26rem;
+      background: var(--shape-base);
+      border: 1px solid var(--shape-stroke);
+      border-radius: 1.5rem;
+      transform: translateX(0) translateY(0) rotate(0);
+      transition: transform 0.4s ease, z-index 0.4s ease;
+
+      & #mensal {
+          font: var(--title-xs);
+          color: var(--blue-light);
+          position: relative;
+          bottom: 1.25rem;
+          right: 5rem;
+        }
+      
+      & h1 {
+          position: relative;
+          bottom: 1.875rem;
+        }
+      & p {
+          position: relative;
+          bottom: 1.875rem;
+      }  
+
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 0.75rem;
+          position: relative;
+          top: 1.25rem;
+  
+          font: var(--body-xs);
+          color: var(--text-body);
+        
+          li {
+            list-style: none; 
+            position: relative; 
+            padding-left: 3.75rem; 
+        
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0; 
+              top: 50%; 
+              transform: translateY(-50%) translateX(70%);
+              width: 2.5rem; 
+              height: 2.5rem; 
+              background-image: url(/assets/icons/list-blue.svg); 
+              background-size: contain; 
+              background-repeat: no-repeat; 
+            }
+          }
+        }
+        
+        & .btn-card-2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          top: 2.5rem;
+          padding: 0px 20px;
+          width: 14rem;
+          height: 2.5rem;
+          margin-inline: auto;
+          background: var(--blue-dark);
+          color: var(--text-title);
+          border-radius: 8px;
+          flex: none;
+          }
+
+          & .stars-card-2 {
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              gap: 10px;
+              transform: translateX(-1.875rem) translateY(-1.25rem);
+      
+              & img:nth-child(1) {
+                width: 1.625rem;
+                height: 1.625rem;
+              }
+              & img:nth-child(2) {
+                width: 0.813rem;
+                height: 0.813rem;
+              }
+            }
+        &:hover {
+          box-shadow: 0px 6px 30px 5px rgba(115, 182, 210, 0.1);
+          background-color: var(--shape-hover);
+          transform: translateX(-17.5rem) translateY(3.125rem) rotate(-8deg); 
+          z-index: 1;
+        }    
+  }
+
+  & .card-3 {
+      position: absolute;
+      width: 18rem;
+      height: 26rem;
+      background: var(--shape-base);
+      border: 1px solid var(--shape-stroke);
+      border-radius: 1.5rem;
+      transform: translateX(0) translateY(0) rotate(0);
+      transition: transform 0.4s ease, z-index 0.4s ease;
+
+      & #anual {
+          font: var(--title-xs);
+          color: var(--blue-light);
+          position: relative;
+          right: 5rem;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          padding: 0px;
+          gap: 0.75rem;
+          position: relative;
+          padding-left: 2rem;
+          bottom: 1.25rem;
+    
+          font: var(--body-xs);
+          color: var(--text-body);
+        
+          li {
+            list-style: none; 
+            position: relative; 
+            padding-left: 1.875rem; 
+        
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0; 
+              top: 50%; 
+              transform: translateY(-50%) translateX(-10%);
+              width: 2.5rem; 
+              height: 2.5rem; 
+              background-image: url(/assets/icons/list-blue.svg); 
+              background-size: contain; 
+              background-repeat: no-repeat; 
+            }
+          }
+        }
+
+        & .btn-card-3  {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 14rem;
+          height: 2.5rem;
+          background: var(--blue-dark);
+          color: var(--text-title);
+          border-radius: 8px;
+          flex: none;
+          margin-inline: auto;
+        }
+  
+
+        & .stars-card-3 {
+          position: relative;
+          transform: translateX(10rem) translateY(25.625rem) rotate(150deg);
+          & img:nth-child(2) {
+              
+            width: 2.063rem;
+            height: 0.813rem;
+          }
+        }
+        
+        &:hover {
+          background-color: var(--shape-hover);
+          box-shadow: 0px 6px 30px 5px rgba(115, 182, 210, 0.1);
+          transform: translateX(17.5rem) translateY(3.125rem) rotate(8deg);
+          z-index: 1;
+        }   
+  }
+
+  &::before {
+      content: ""; 
+      position: absolute;
+      width: 59rem;
+      height: 50%;
+      left: calc(50% - 59rem/2);
+      top: calc(100% - 59rem/2 - 44px);
+      background: var(--shape-base);
+      filter: blur(17.75rem);
+      opacity: 1;
+      z-index: -1; 
+    } 
+}
+
+@media (width <= 80em) {
+
+  section.pricing {
+    width: 62.5rem;
+
+    #assinatura {
+      width: 13.813rem;
+      position: absolute; 
+      top: 1.25rem; 
+      left: 50%; 
+      transform: translateX(-190%);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #E2E7E9;
+      z-index: 10;
+      transition: top 0.3s ease, left 0.3s ease; 
+    }
+    
+  & .cards {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 1rem; 
+    background-color: transparent;
+    border-radius: 1.5rem;
+    transition: none;
+    
+    & h1 {
+        font: var(--title-md);
+        color: var(--text-title);
+        padding-top: 2rem;
+        
+        & small {
+            font: var(--title-xs);
+            }
+     }
+     
+     & p {
+      display: flex;
+      justify-content: start;
+      font: var(--body-sm);
+      color: var(--text-label);
+      padding-top: 0.5rem;
+      padding-left: 2.5rem;
+      padding-bottom: 4.375rem;
+      
+      }
+  
+    &:hover .card-2 {
+        transform: none;
+        transition: none;
+    }
+  
+    &:hover .card-3 {
+        transform: none;
+        transition: none;
+    }
+    & .card-1 {
+      border:  1px solid var(--shape-stroke);
+      position: relative;
+      left: 19.125rem;
+
+      #semestral {
+        position: relative;
+        top: 1.875rem;
+        right: 4.063rem;
+      }
+
+      & h1 {
+        position: relative;
+        top: 1.25rem;
+      }
+      & p {
+        position: relative;
+        top: 1.25rem;
+      }
+
+      & ul {
+        position: relative;
+        top: 1.875rem;
+      }
+
+      & .btn-card-1 {
+        position: relative;
+        top: 2.188rem;
+      }
+
+      & img {
+        display: none;
+      }
+    }
+
+    & .card-3 {
+      position: relative;
+      width: 18rem;
+      height: 26rem;
+      background: var(--shape-base);
+      border: 1px solid var(--shape-stroke);
+      border-radius: 1.5rem;
+      position: relative;
+      transition: none;
+
+      #anual {
+        position: relative;
+        top: 1.875rem;
+      }
+
+      & h1 {
+        position: relative;
+        top: 0.625rem;
+      }
+
+      & p {
+        position: relative;
+        top: 0.625rem;
+      }
+      
+      & ul {
+        position: relative;
+        top: 0.625rem;
+      }
+
+      & .btn-card-3 {
+        position: relative;
+        top: 1.875rem;
+      }
+
+      & .stars-card-3 {
+        display: none;
+      }
+  }  
+
+    & .card-2 {
+      position: relative;
+      width: 18rem;
+      height: 26rem;
+      right: 18.75rem;
+      background: var(--shape-base);
+      border: 1px solid var(--shape-stroke);
+      border-radius: 24px;
+      position: relative;
+      transition: none;
+
+      #mensal {
+        position: relative;
+        top: 1.875rem;
+      }
+
+      & h1 {
+        position: relative;
+        top: 1.25rem;
+      }
+
+      & p {
+        position: relative;
+        top: 1.25rem;
+      }
+
+      & ul {
+        position: relative;
+        top: 3.75rem;
+      }
+      & .btn-card-2 {
+        position: relative;
+        top: 5.625rem;
+      }
+
+      & .stars-card-2 {
+        display: none;
+        }
+      }  
+    }
+  }
+}
