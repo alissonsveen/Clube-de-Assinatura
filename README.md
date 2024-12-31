@@ -1,4 +1,4 @@
-# 📚 Landing Page de Livro 🎨
+# 📚 Landing Page de Livro 🟣
 
 Este é um projeto de **Landing Page** de um livro, desenvolvido como parte da **Trilha Full Stack da Rocketseat**. O objetivo foi recriar o design de uma página de um livro, fornecido no **Figma**, utilizando apenas **HTML** e **CSS**. A página foi projetada para ser visualmente atrativa e funcional, com foco em uma boa experiência de usuário.
 
